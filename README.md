@@ -1,4 +1,4 @@
-# html2jsx.js
+# html2jsx.js [![Build Status](https://travis-ci.org/SamyPesse/html2jsx.js.png?branch=master)](https://travis-ci.org/SamyPesse/html2jsx.js)
 
 > Pure-JS HTML to Jsx parser that also works in webworker.
 
