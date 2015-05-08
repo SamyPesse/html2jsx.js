@@ -18,6 +18,7 @@ Then simply parse html into Jsx using:
 var parser = require('html2jsx.js');
 
 parser('<h1>Hello World</h1>', function(err, jsx) {
-    console.log(hscript);
+    // jsx == 'React.createElement("h1", null, [ "Hello World" ])'
+    console.log(jsx);
 });
 ```
