@@ -1,7 +1,7 @@
 {
     "name": "html2jsx.js",
     "description": "Pure-JS html to jsx parser (works in webworker)",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "main": "./lib/index.js",
     "repository": {
         "type": "git",
