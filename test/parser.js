@@ -34,5 +34,15 @@ describe('HTML2Jsx', function() {
             done();
         })
     });
+
+    it('should accept custom components', function(done) {
+        parser('<p>This is some math: <TeX>a = b + 1</TeX></p>', {
+            components: ['TeX']
+        }, function(err, jsx) {
+            if (err) return done(err);
+            assert.equal(jsx, 'React.createElement("p", null, [ "This is some math: ", React.createElement(TeX, null, [ "a = b + 1" ]) ])');
+            done();
+        })
+    });
 });
 

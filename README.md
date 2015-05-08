@@ -15,10 +15,21 @@ $ npm install html2jsx.js
 Then simply parse html into Jsx using:
 
 ```js
-var parser = require('html2jsx.js');
+var html2jsx = require('html2jsx.js');
 
-parser('<h1>Hello World</h1>', function(err, jsx) {
+html2jsx('<h1>Hello World</h1>', function(err, jsx) {
     // jsx == 'React.createElement("h1", null, [ "Hello World" ])'
+    console.log(jsx);
+});
+```
+
+You can also provide your own components:
+
+```js
+html2jsx('<p>This is some math: <TeX>a = b + 1</TeX></p>', {
+    components: ['TeX']
+}, function(err, jsx) {
+    // jsx == 'React.createElement("p", null, [ "This is some math: ", React.createElement(TeX, null, [ "a = b + 1" ]) ])'
     console.log(jsx);
 });
 ```
