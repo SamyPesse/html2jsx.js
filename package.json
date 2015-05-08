@@ -1,0 +1,19 @@
+{
+    "name": "html2jsx.js",
+    "description": "Pure-JS html to jsx parser (works in webworker)",
+    "version": "0.0.0",
+    "main": "./lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SamyPesse/html2jsx.js.git"
+    },
+    "dependencies": {
+        "htmlparser2": "^3.8.2"
+    },
+    "devDependencies": {
+        "mocha": "2.2.4"
+    },
+    "scripts": {
+        "test": "mocha"
+    }
+}
